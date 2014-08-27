@@ -28,10 +28,24 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+		        <script src="js/jquery.min.js" type="text/javascript"></script>
+		<script>
+		jQuery(window).load(function(){
+		  jQuery('.loader').fadeOut();
+		  jQuery('.blacksheet').fadeOut();
+		  jQuery('.mainwrap').fadeIn();
+		});
+		</script>
     </head>
     
     <body>
-
+	<ul class="loader">
+	  <li style="background: #69a089;"></li>
+	  <li style="background: #3a8a69;"></li>
+	  <li style="background: #344e43;"></li>
+	</ul>
+	<div class="blacksheet"></div>
+	<div class="mainwrap" style="display:none;" >
         <div class="templatemo-top-bar" id="templatemo-top">
             <div class="container">
                 <div class="subheader">
@@ -678,7 +692,6 @@
                 </div>
             </div>
         </div>
-        <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js"  type="text/javascript"></script>
         <script src="js/stickUp.min.js"  type="text/javascript"></script>
         <script src="js/colorbox/jquery.colorbox-min.js"  type="text/javascript"></script>
